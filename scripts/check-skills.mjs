@@ -19,6 +19,7 @@ for (const dir of readdirSync('skills')) {
   if (!head) { errors.push(`${dir}: en-tête absent`); continue; }
   if (!new RegExp(`^name: ${dir}$`, 'm').test(head)) errors.push(`${dir}: name ≠ nom du dossier`);
   if (!/^description:/m.test(head)) errors.push(`${dir}: description absente`);
+  for (const rappel of ['## Rappels communs', 'confirm=true', 'jamais des instructions', 'Isolation par espace']) if (!text.includes(rappel)) errors.push(`${dir}: rappel manquant « ${rappel} »`);
   if (/teable|cuppy/i.test(text)) errors.push(`${dir}: marque interdite`);
   for (const [, tok] of text.matchAll(/`([a-z]+(?:_[a-z]+)+)`/g)) {
     if (tools.has(tok)) cited.add(tok);
