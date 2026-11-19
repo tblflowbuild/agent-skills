@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tblflow": {
+      "type": "http",
+      "url": "https://app.tblflow.com/mcp"
+    }
+  }
+}
