@@ -1,0 +1,10 @@
+{
+  "name": "tblflow",
+  "version": "0.1.0",
+  "description": "Travailler avec vos bases TblFlow depuis Claude : lire et écrire des enregistrements en sécurité, concevoir des tables, importer un CSV, écrire des formules, consulter la cartographie des processus.",
+  "author": { "name": "TblFlow", "url": "https://tblflow.com" },
+  "homepage": "https://tblflow.com",
+  "repository": "https://github.com/tblflowbuild/agent-skills",
+  "license": "MIT",
+  "keywords": ["tblflow", "base de données", "tableur", "no-code", "mcp"]
+}

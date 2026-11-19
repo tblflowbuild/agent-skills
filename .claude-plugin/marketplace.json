@@ -1,0 +1,11 @@
+{
+  "name": "tblflow",
+  "owner": { "name": "TblFlow" },
+  "plugins": [
+    {
+      "name": "tblflow",
+      "source": "./",
+      "description": "Skills et connecteur MCP pour travailler avec TblFlow depuis Claude."
+    }
+  ]
+}
